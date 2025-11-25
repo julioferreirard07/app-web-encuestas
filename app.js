@@ -1,9 +1,11 @@
 // Autenticación de usuario
 document.getElementById("login").addEventListener("submit", function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Evitar que se recargue la página
+
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
+    // Verificación de usuario y contraseña
     if (username === "Central" && password === "123@encuestas") {
         document.getElementById("login-form").style.display = "none"; // Ocultar el formulario de login
         document.getElementById("survey-container").style.display = "block"; // Mostrar la encuesta
@@ -37,3 +39,4 @@ document.getElementById("submit-rating").addEventListener("click", function() {
         });
     }
 });
+
