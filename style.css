@@ -1,22 +1,35 @@
 body {
+    background-color: black;
+    color: white;
     font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
 }
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
+    text-align: center;
 }
 
-.hidden {
-    display: none;
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
 }
 
 #qr-container {
+    display: none;
     margin-top: 20px;
 }
-
-#qr {
-    margin: 20px 0;
-}
-
